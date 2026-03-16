@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Spinner from "./components/Spinner";
 import Home from "./components/Home";
+import About from "./components/About";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ const App = () => {
     <div className="bg-[#11071f] min-h-screen overflow-x-hidden ">
       <Navbar />
       <Home />
+      <About />
     </div>
   );
 };
