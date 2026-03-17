@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Spinner from "./components/Spinner";
 import Home from "./components/Home";
 import About from "./components/About";
-
+import Skills from "./components/Skills";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -22,6 +22,7 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
+      <Skills />
     </div>
   );
 };
