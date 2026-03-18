@@ -4,6 +4,7 @@ import Spinner from "./components/Spinner";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -23,6 +24,7 @@ const App = () => {
       <Home />
       <About />
       <Skills />
+      <Projects/>
     </div>
   );
 };
