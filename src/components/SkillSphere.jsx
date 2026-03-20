@@ -15,7 +15,7 @@ const skills = [
   "logos/javascript.svg",
   "logos/python.svg",
   "logos/html.svg",
-  "logos/bootstrap.svg"
+  "logos/bootstrap.svg",
 ];
 
 const SkillSphere = () => {
@@ -29,7 +29,7 @@ const SkillSphere = () => {
   // Generate random skill percentages for each icon (30-100%)
   const skillPercents = useMemo(
     () => skills.map(() => Math.random() * 0.7 + 0.3),
-    []
+    [],
   );
   const percentRefs = useRef(skillPercents.map(() => 0)); // current fill level
 

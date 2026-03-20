@@ -36,8 +36,8 @@ const icons = [
     id: 5,
     icon: Github,
     label: "GitHub",
-    value: "abinu12",
-    link: "https://github.com/abinu12",
+    value: "abinuma",
+    link: "https://github.com/abinuma",
   },
   {
     id: 6,

@@ -17,39 +17,29 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "ecomerce web app ",
+      title: "e-commerce web app ",
       description:
-        "This is a full MERN stack ecommerce application... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate unde, dolores ex praesentium molestias ullam ipsum provident neque, numquam at cing elit. Voluptate unde, dolores ",
-      github: "#",
+        "I developed a full-stack e-commerce web application called Crown Wear, handling both frontend and backend development. On the frontend, I built a responsive React (Vite) interface using reusable components and managed state efficiently with Context API and props for smooth data flow. On the backend, I created RESTful APIs, implemented secure authentication with JWT, and managed core features like products, cart, and orders.",
+      github: "https://github.com/abinuma/Ecommerce-MERNStack",
       live: "https://crownwearbyabinu.vercel.app/",
       image: crownwear,
     },
     {
       id: 2,
-      title: "Apple Clone",
+      title: "hotel booking web app",
       description:
-        "Apple landing page clone built with React... Lorem ipsum dolor, sim! ",
-      github: "#",
-      live: "#",
-      image: apple,
+        "I built a full-stack hotel booking web application where users can browse rooms and make reservations, and hotel owners can manage listings via a dashboard. The frontend uses React with dynamic UI, routing, and Context API for state management. The backend features RESTful APIs built with Node.js, Express, and MongoDB, handling authentication, room availability, and bookings. I integrated automated email notifications and Cloudinary for image uploads.",
+      github: "https://github.com/abinuma/Hotel-booking-MERN-Stack-App",
+      live: "https://hotel-booking-peach-rho.vercel.app/",
+      // image: apple,
     },
     {
       id: 3,
-      title: "Amazon Clone",
+      title: "blog app",
       description:
-        "Amazon landing page clone built with React... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate unde, dolores ex praesentium molestias ullam ipsum provident neque, numquam at eum facilis error commodi. Ipsam veritatis reprehenderit expedita cum harum! ",
-      github: "#",
-      live: "#",
-      image: amazon,
-    },
-    {
-      id: 4,
-      title: "Netflix Clone",
-      description:
-        "Netflix landing page clone built with React... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate unde, dolores ex praesentium molestias ullam ipsum provident neque, numquam at eum facilis error commodi. Ipsam veritatis reprehenderit expedita cum harum! ",
-      github: "#",
-      live: "#",
-      image: netflix,
+        "This is a full-stack blog application where I built a React frontend with protected and public routes, and reusable components for authentication, profile management, and post CRUD operations.I implemented form validation, clean navigation flows, and role-based/private layouts to create a smooth user experience across login, signup, verification, and content management. The backend powers secure APIs for user auth, email verification/recovery, and persistent data handling for posts and categories. ",
+      github: "https://github.com/abinuma/blog-app-react",
+      live: "https://blog-app-react-sooty.vercel.app/",
     },
   ];
 
@@ -182,12 +172,19 @@ const Projects = () => {
                       <div className="flex flex-col gap-4 text-sm text-blue-600">
                         <a
                           href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="hover:text-[#261045]"
                         >
                           🔗 GitHub Link
                         </a>
 
-                        <a href={project.live} className="hover:text-[#261045]">
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[#261045]"
+                        >
                           🌐 Live Site
                         </a>
                       </div>
@@ -215,8 +212,20 @@ const Projects = () => {
                     </button>
 
                     <div className="mb-3 flex  gap-4 text-blue-400">
-                      <a href={project.github}>GitHub</a>
-                      <a href={project.live}>Live Site</a>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
+                      </a>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Site
+                      </a>
                     </div>
 
                     <p>{project.description}</p>
@@ -234,12 +243,8 @@ const Projects = () => {
                   className="relative group rounded-xl overflow-hidden flex flex-col border border-[#331563] h-80"
                 >
                   {/* TOP PART */}
-                  <div className="bg-white flex-1 flex items-center justify-center">
-                    <img
-                      className="w-46 h-24"
-                      src={project.image}
-                      alt={project.title}
-                    />
+                  <div className="bg-white flex-1 flex items-center justify-center font-extrabold text-4xl tracking-wide">
+                    QuickStay
                   </div>
 
                   {/* TECH STACK + BUTTONS */}
@@ -286,12 +291,19 @@ const Projects = () => {
                       <div className="flex flex-col gap-4 text-sm text-blue-600">
                         <a
                           href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="hover:text-[#261045]"
                         >
                           🔗 GitHub Link
                         </a>
 
-                        <a className="hover:text-[#261045]" href={project.live}>
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[#261045]"
+                        >
                           🌐 Live Site
                         </a>
                       </div>
@@ -320,8 +332,20 @@ const Projects = () => {
                     </button>
 
                     <div className="mb-3 flex gap-4 text-blue-400">
-                      <a href={project.github}>GitHub</a>
-                      <a href={project.live}>Live Site</a>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
+                      </a>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Site
+                      </a>
                     </div>
 
                     <p>{project.description}</p>
@@ -340,19 +364,15 @@ const Projects = () => {
                   className="relative group rounded-xl overflow-hidden flex flex-col border border-[#331563] h-80"
                 >
                   {/* TOP PART */}
-                  <div className="bg-white flex-1 flex items-center justify-center">
-                    <img
-                      className="w-46"
-                      src={project.image}
-                      alt={project.title}
-                    />
+                  <div className="bg-white flex-1 flex items-center justify-center font-extrabold text-4xl tracking-wide">
+                    Blog app
                   </div>
 
                   {/* TECH STACK + BUTTONS */}
                   <div className="flex-1 flex flex-col justify-center p-2 bg-[#2b1848]">
                     <div className="flex items-center justify-around">
                       <img className="h-10 w-10" src={mongodb} alt="" />
-                      <img className="h-10 w-10" src={express} alt="" />
+                      <img className="h-10 w-10 ml-1 " src={express} alt="" />
                       <img className="h-10 w-10" src={react} alt="" />
                       <img className="h-10 w-10" src={nodejs} alt="" />
                     </div>
@@ -372,7 +392,7 @@ const Projects = () => {
                             activeId === project.id ? null : project.id,
                           )
                         }
-                        className="w-[40%] p-2 bg-black text-white rounded-md"
+                        className=" w-[40%] p-2 bg-black text-white rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1f1c23] hover:scale-105 hover:shadow-lg active:scale-95"
                       >
                         More
                       </button>
@@ -385,135 +405,68 @@ const Projects = () => {
                   {/* DESKTOP POPUP */}
                   <div className="hidden lg:flex absolute inset-0 items-center justify-center pointer-events-none">
                     <div className="bg-white rounded-xl shadow-xl w-[80%] h-[75%] flex flex-col items-center justify-center gap-3 transform scale-75 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.22,1.2,0.36,1)] lg:group-hover:scale-100 lg:group-hover:opacity-100 pointer-events-auto">
-                      <h3 className="text-lg font-semibold">{project.title}</h3>
+                      <h3 className=" px-2 text-lg font-semibold">
+                        {project.title}
+                      </h3>
 
-                      <div className="flex gap-4 text-sm text-blue-600">
-                        <a href={project.github} className="hover:underline">
+                      <div className="flex flex-col gap-4 text-sm text-blue-600">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[#261045]"
+                        >
                           🔗 GitHub Link
                         </a>
 
-                        <a href={project.live} className="hover:underline">
+                        <a
+                          className="hover:text-[#261045]"
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           🌐 Live Site
                         </a>
                       </div>
 
-                      <button
-                        onClick={() => setActiveId(project.id)}
-                        className="mt-2 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition"
-                      >
-                        Description
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                {activeId === project.id && (
-                  <div className="mt-3 bg-[#1e1330] text-white p-4 rounded-xl relative md:hidden">
-                    <button
-                      onClick={() => setActiveId(null)}
-                      className="absolute top-2 right-2 text-lg"
-                    >
-                      ✕
-                    </button>
-
-                    <div className="mb-3 flex gap-4 text-blue-400">
-                      <a href={project.github}>GitHub</a>
-                      <a href={project.live}>Live Site</a>
-                    </div>
-
-                    <p>{project.description}</p>
-                  </div>
-                )}
-              </React.Fragment>
-            ))}
-
-          {/* card 4 */}
-          {projects
-            .filter((project) => project.id === 4)
-            .map((project) => (
-              <React.Fragment>
-                <div
-                  key={project.id}
-                  className="relative group rounded-xl overflow-hidden flex flex-col border    h-80   "
-                >
-                  {/* TOP PART */}
-                  <div className="bg-[#111111] flex-1 flex items-center justify-center shadow-inner shadow-white/15">
-                    <img
-                      className="w-40"
-                      src={project.image}
-                      alt={project.title}
-                    />
-                  </div>
-
-                  {/* TECH STACK + BUTTONS */}
-                  <div className="flex-1 flex flex-col justify-center p-2 bg-[#2b1848]">
-                    <div className="flex items-center justify-around">
-                      <img className="h-10 w-10" src={mongodb} alt="" />
-                      <img className="h-10 w-10" src={express} alt="" />
-                      <img className="h-10 w-10" src={react} alt="" />
-                      <img className="h-10 w-10" src={nodejs} alt="" />
-                    </div>
-
-                    <div className="flex justify-around text-4xl">
-                      <p className="text-[#439934]">M</p>
-                      <p className="text-white">E</p>
-                      <p className="text-[#61dafb]">R</p>
-                      <p className="text-[#83cd29]">N</p>
-                    </div>
-
-                    {/* MOBILE + TABLET BUTTON */}
-                    <div className="lg:hidden flex mt-3 justify-center">
                       <button
                         onClick={() =>
                           setActiveId(
                             activeId === project.id ? null : project.id,
                           )
                         }
-                        className="w-[40%] p-2 bg-black text-white rounded-md"
-                      >
-                        More
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* DESKTOP HOVER OVERLAY */}
-                  <div className="hidden lg:block absolute inset-0 bg-white/20 backdrop-blur-sm opacity-0 transition duration-500 lg:group-hover:opacity-80"></div>
-
-                  {/* DESKTOP POPUP */}
-                  <div className="hidden lg:flex absolute inset-0 items-center justify-center pointer-events-none">
-                    <div className="bg-white rounded-xl shadow-xl w-[80%] h-[75%] flex flex-col items-center justify-center gap-3 transform scale-75 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.22,1.2,0.36,1)] lg:group-hover:scale-100 lg:group-hover:opacity-100 pointer-events-auto">
-                      <h3 className="text-lg font-semibold">{project.title}</h3>
-
-                      <div className="flex gap-4 text-sm text-blue-600">
-                        <a href={project.github} className="hover:underline">
-                          🔗 GitHub Link
-                        </a>
-
-                        <a href={project.live} className="hover:underline">
-                          🌐 Live Site
-                        </a>
-                      </div>
-
-                      <button
-                        onClick={() => setActiveId(project.id)}
-                        className="mt-2 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition"
+                        className="p-2 bg-black text-white rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#3b3740] hover:scale-105 hover:shadow-lg active:scale-95"
                       >
                         Description
                       </button>
                     </div>
                   </div>
                 </div>
+                {/* mobile description */}
                 {activeId === project.id && (
                   <div className="mt-3 bg-[#1e1330] text-white p-4 rounded-xl relative md:hidden">
                     <button
                       onClick={() => setActiveId(null)}
-                      className="absolute top-2 right-2 text-lg"
+                      className="cursor-pointer absolute top-2 right-2 mx-3 text-lg"
                     >
                       ✕
                     </button>
 
                     <div className="mb-3 flex gap-4 text-blue-400">
-                      <a href={project.github}>GitHub</a>
-                      <a href={project.live}>Live Site</a>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
+                      </a>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Site
+                      </a>
                     </div>
 
                     <p>{project.description}</p>

@@ -36,10 +36,9 @@ const About = () => {
             </p>
 
             <p>
-              I don't just write code — I design systems. By combining practical
-              development skills with strong algorithmic thinking from my
-              Information Systems background, I build solutions that are clean,
-              optimized, and reliable.
+              By combining practical development skills with strong algorithmic
+              thinking from my Information Systems background, I build solutions
+              that are clean, optimized, and reliable.
             </p>
 
             <p>
