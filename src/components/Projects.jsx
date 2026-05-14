@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import crownwear from "../assets/crownwear.png";
+import booksimply from "../assets/booksimply.png";
 import amazon from "../assets/amazon.svg";
 import netflix from "../assets/netflix.svg";
 import apple from "../assets/apple.svg";
@@ -11,6 +12,7 @@ const tailwind = "logos/tailwind.svg";
 const nodejs = "logos/nodejs.svg";
 const express = "logos/express.svg";
 const mongodb = "logos/mongodb.svg";
+const postgres = "logos/postgres.svg";
 const Projects = () => {
   const [activeId, setActiveId] = useState(null);
 
@@ -19,19 +21,19 @@ const Projects = () => {
       id: 1,
       title: "e-commerce web app ",
       description:
-        "I developed a full-stack e-commerce web application called Crown Wear, handling both frontend and backend development. On the frontend, I built a responsive React (Vite) interface using reusable components and managed state efficiently with Context API and props for smooth data flow. On the backend, I created RESTful APIs, implemented secure authentication with JWT, and managed core features like products, cart, and orders.",
-      github: "https://github.com/abinuma/Ecommerce-MERNStack",
-      live: "https://crownwearbyabinu.vercel.app/",
+        "An AI-powered PERN stack e-commerce platform featuring multi-vendor management and strict, three-tier Role-Based Access Control (Admin, Seller, Client). The system includes an admin-approved merchant onboarding pipeline, flexible checkout via Stripe and Cash on Delivery, an integrated AI chatbot for platform and product inquiries, and automated AI summarization of customer product reviews.",
+      github: "https://github.com/abinuma/AIpoweredEcommerce",
+      live: "https://mycart-kaxv.onrender.com",
       image: crownwear,
     },
     {
       id: 2,
       title: "hotel booking web app",
       description:
-        "I built a full-stack hotel booking web application where users can browse rooms and make reservations, and hotel owners can manage listings via a dashboard. The frontend uses React with dynamic UI, routing, and Context API for state management. The backend features RESTful APIs built with Node.js, Express, and MongoDB, handling authentication, room availability, and bookings. I integrated automated email notifications and Cloudinary for image uploads.",
+        "This is a full-stack hotel booking web application where users can browse rooms and make reservations, and hotel owners can manage listings via a dashboard. The frontend uses React with dynamic UI, routing, and Context API for state management. The backend features RESTful APIs built with Node.js, Express, and MongoDB, handling authentication, room availability, and bookings. I integrated automated email notifications and Cloudinary for image uploads.",
       github: "https://github.com/abinuma/Hotel-booking-MERN-Stack-App",
-      live: "https://hotel-booking-peach-rho.vercel.app/",
-      // image: apple,
+      live: "https://booksimply.vercel.app/",
+      image: booksimply,
     },
     {
       id: 3,
@@ -131,14 +133,14 @@ const Projects = () => {
                   {/* TECH STACK + BUTTONS */}
                   <div className="flex-1 flex flex-col justify-center p-2 bg-[#2b1848]">
                     <div className="flex items-center justify-around">
-                      <img className="h-10 w-10" src={mongodb} alt="" />
-                      <img className="h-10 w-10 ml-1" src={express} alt="" />
-                      <img className="h-10 w-10" src={react} alt="" />
-                      <img className="h-10 w-10" src={nodejs} alt="" />
+                      <img className="h-10 w-10" src={postgres} alt="postgreslogo" />
+                      <img className="h-10 w-10 ml-1" src={express} alt="expresslogo" />
+                      <img className="h-10 w-10" src={react} alt="reactlogo" />
+                      <img className="h-10 w-10" src={nodejs} alt="nodejslogo" />
                     </div>
 
                     <div className="flex justify-around text-4xl">
-                      <p className="text-[#439934]">M</p>
+                      <p className="text-[#336791]">P</p>
                       <p className="text-white">E</p>
                       <p className="text-[#61dafb]">R</p>
                       <p className="text-[#83cd29]">N</p>
@@ -243,8 +245,12 @@ const Projects = () => {
                   className="relative group rounded-xl overflow-hidden flex flex-col border border-[#331563] h-80"
                 >
                   {/* TOP PART */}
-                  <div className="bg-white flex-1 flex items-center justify-center font-extrabold text-4xl tracking-wide">
-                    QuickStay
+                  <div className="bg-[#675c7b] flex-1 flex items-center justify-center">
+                    <img
+                      className="w-46"
+                      src={project.image}
+                      alt={project.title}
+                    />
                   </div>
 
                   {/* TECH STACK + BUTTONS */}

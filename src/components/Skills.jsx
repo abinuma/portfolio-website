@@ -1,20 +1,10 @@
-// components/Skills.tsx
 import React from "react";
 import SphereCanvas from "./SphereCanvas";
 import { useRef, useEffect } from "react";
 import ScrollFadeUp from "./ScrollFadeUp";
 import { Code2 } from "lucide-react";
 import Skill2 from "./Skill2";
-// import {
-//   SiReact,
-//   SiNextdotjs,
-//   SiTailwindcss,
-//   SiTypescript,
-//   SiNodedotjs,
-//   SiMongodb,
-//   SiGit,
-//   SiFigma,
-// } from "react-icons/si"
+
 
 const Skills = () => {
   return (

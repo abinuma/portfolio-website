@@ -28,6 +28,7 @@ const skillCategories = [
   {
     category: "Databases & Tools",
     skills: [
+      { name: "Postgres", icon: "logos/postgres.svg" },
       { name: "MongoDB", icon: "logos/mongodb.svg" },
       { name: "MySQL", icon: "logos/mysql.svg" },
       { name: "Git", icon: "logos/git.svg" },
