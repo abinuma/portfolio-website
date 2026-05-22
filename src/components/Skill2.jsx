@@ -11,18 +11,15 @@ const skillCategories = [
       { name: "JavaScript", icon: "logos/javascript.svg" },
 
       { name: "HTML5", icon: "logos/html.svg" },
-      // { name: "CSS3", icon: "logos/css.svg" },
     ],
   },
   {
     category: "Backend",
     skills: [
       { name: "Node.js", icon: "logos/nodejs.svg" },
-      { name: "Python", icon: "logos/python.svg" },
+      { name: "Express.js", icon: "logos/express.svg" },
 
-      { name: "Java", icon: "logos/java.svg" },
-      { name: "C++", icon: "logos/cplusplus.svg" },
-      { name: "C#", icon: "logos/csharp.svg" },
+  
     ],
   },
   {
@@ -31,7 +28,7 @@ const skillCategories = [
       { name: "Postgres", icon: "logos/postgres.svg" },
       { name: "MongoDB", icon: "logos/mongodb.svg" },
       { name: "MySQL", icon: "logos/mysql.svg" },
-      { name: "Git", icon: "logos/git.svg" },
+      { name: "Git & GitHub", icon: "logos/git.svg" },
     ],
   },
 ];
