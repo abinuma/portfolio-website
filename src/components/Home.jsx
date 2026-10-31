@@ -62,9 +62,6 @@ const Home = () => {
         {/* Soft top-left lavender glow */}
         <div className="absolute -top-32 -left-32 w-96 h-96 sm:w-[520px] sm:h-[520px] bg-purple-700/15 rounded-full blur-[120px]" />
         
-        {/* Right side violet atmosphere behind photo */}
-        <div className="absolute top-1/4 -right-24 w-96 h-96 sm:w-[560px] sm:h-[560px] bg-purple-600/15 rounded-full blur-[130px]" />
-        
         {/* Center deep charcoal radial glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-indigo-950/20 rounded-full blur-[140px]" />
 
@@ -190,31 +187,42 @@ const Home = () => {
             </motion.div>
           </motion.div>
 
-          {/* RIGHT COLUMN: Profile Photo without any frame or borders */}
+          {/* RIGHT COLUMN: Profile Photo with circular center glow & slow bottom fade */}
           <motion.div
             variants={photoContainerVariants}
             initial="hidden"
             animate="visible"
             className="lg:col-span-5 flex justify-center lg:justify-end items-center relative mt-4 lg:mt-0"
           >
-            <div className="relative w-full max-w-[340px] sm:max-w-[390px] xl:max-w-[420px] group">
+            <div className="relative w-full max-w-[340px] sm:max-w-[390px] xl:max-w-[420px] flex items-center justify-center">
               
-              {/* Soft ambient background glow */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-purple-600/20 via-purple-500/10 to-indigo-500/15 rounded-3xl blur-2xl opacity-60 group-hover:opacity-85 transition-opacity duration-700 pointer-events-none" />
+              {/* Circular ambient glow radiating from the center and slowly fading out at edges */}
+              <div
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] sm:w-[460px] h-[360px] sm:h-[460px] rounded-full pointer-events-none blur-3xl opacity-90"
+                style={{
+                  background: "radial-gradient(circle, rgba(175, 95, 255, 0.46) 0%, rgba(147, 51, 234, 0.28) 38%, rgba(126, 34, 206, 0.10) 62%, transparent 75%)",
+                }}
+              />
 
-              {/* The Photo itself - completely frameless and borderless */}
+              {/* Clean photo with very slow bottom fade into near-black hero background */}
               <motion.div
-                whileHover={{ y: -6, scale: 1.01 }}
-                transition={{ duration: 0.35, ease: "easeOut" }}
-                className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/4.8] shadow-[0_20px_50px_rgba(0,0,0,0.55)]"
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="relative z-10 w-full rounded-t-2xl sm:rounded-t-3xl overflow-hidden aspect-[4/4.8]"
+                style={{
+                  maskImage: "linear-gradient(to bottom, black 50%, rgba(0,0,0,0.7) 75%, transparent 100%)",
+                  WebkitMaskImage: "linear-gradient(to bottom, black 50%, rgba(0,0,0,0.7) 75%, transparent 100%)",
+                }}
               >
                 <img
                   src={personal}
                   alt="Abinu Mathewos"
-                  className="w-full h-full object-cover object-top filter brightness-[0.98] contrast-[1.02] transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  className="w-full h-full object-cover object-top"
                 />
-              </motion.div>
 
+                {/* Soft gradient overlay matching the #0e0717 background for a smooth, natural dissolve */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0e0717] via-[#0e0717]/50 via-30% to-transparent pointer-events-none" />
+              </motion.div>
             </div>
           </motion.div>
 
