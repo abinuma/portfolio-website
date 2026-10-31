@@ -20,7 +20,7 @@ const App = () => {
   }
 
   return (
-    <div className="bg-[#11071f] min-h-screen overflow-x-hidden ">
+    <div className="bg-[#0e0717] min-h-screen overflow-x-hidden text-white">
       <Navbar />
       <Home />
       <About />

@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Github,
-  Linkedin,
-  MapPin,
-} from "lucide-react";
+import { MapPin } from "lucide-react";
 import personal from "../assets/personalPhoto.jpg";
 
 const containerVariants = {
@@ -60,10 +56,10 @@ const Home = () => {
       {/* Ambient background lighting and subtle grid */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft top-left lavender glow */}
-        <div className="absolute -top-32 -left-32 w-96 h-96 sm:w-[520px] sm:h-[520px] bg-purple-700/15 rounded-full blur-[120px]" />
+        <div className="absolute -top-32 -left-32 w-96 h-96 sm:w-130 sm:h-130 bg-purple-700/15 rounded-full blur-[120px]" />
         
         {/* Center deep charcoal radial glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-indigo-950/20 rounded-full blur-[140px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-125 bg-indigo-950/20 rounded-full blur-[140px]" />
 
         {/* Subtle decorative dot-matrix / grid texture */}
         <div 
@@ -101,7 +97,7 @@ const Home = () => {
             <motion.div variants={itemVariants}>
               <h1 className="text-3xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.65rem] font-black text-white tracking-tight leading-[1.12]">
                 I build digital products that{" "}
-                <span className="relative inline-block bg-gradient-to-r from-purple-200 via-purple-300 to-indigo-200 bg-clip-text text-transparent">
+                <span className="relative inline-block bg-linear-to-r from-purple-200 via-purple-300 to-indigo-200 bg-clip-text text-transparent">
                   solve real problems.
                 </span>
               </h1>
@@ -144,10 +140,10 @@ const Home = () => {
               </a>
             </motion.div>
 
-            {/* Bottom Meta Row: Availability, Location, Social Profiles */}
+            {/* Bottom Meta Row: Availability & Location - no separating line */}
             <motion.div
               variants={itemVariants}
-              className="pt-5 flex flex-wrap items-center gap-4 sm:gap-6 border-t border-purple-500/15"
+              className="pt-5 flex flex-wrap items-center gap-4 sm:gap-6"
             >
               {/* Subtle Availability indicator without glowing point */}
               <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-medium w-fit">
@@ -159,31 +155,6 @@ const Home = () => {
                 <MapPin className="w-3.5 h-3.5 text-purple-300" />
                 <span>Based in Addis Ababa, Ethiopia</span>
               </div>
-
-              {/* GitHub and LinkedIn links */}
-              <div className="flex items-center gap-3 sm:ml-auto">
-                <a
-                  href="https://github.com/abinuma"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub Profile"
-                  className="group inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-purple-900/30 border border-purple-400/20 hover:border-purple-400/40 text-slate-300 hover:text-white transition-all duration-300 text-xs sm:text-sm font-medium hover:-translate-y-0.5"
-                >
-                  <Github className="w-4 h-4 text-purple-300 group-hover:text-purple-200 transition-colors" />
-                  <span>GitHub</span>
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/abinu-mathewos-b9489434b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn Profile"
-                  className="group inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-purple-900/30 border border-purple-400/20 hover:border-purple-400/40 text-slate-300 hover:text-white transition-all duration-300 text-xs sm:text-sm font-medium hover:-translate-y-0.5"
-                >
-                  <Linkedin className="w-4 h-4 text-purple-300 group-hover:text-purple-200 transition-colors" />
-                  <span>LinkedIn</span>
-                </a>
-              </div>
             </motion.div>
           </motion.div>
 
@@ -194,34 +165,39 @@ const Home = () => {
             animate="visible"
             className="lg:col-span-5 flex justify-center lg:justify-end items-center relative mt-4 lg:mt-0"
           >
-            <div className="relative w-full max-w-[340px] sm:max-w-[390px] xl:max-w-[420px] flex items-center justify-center">
+            <div className="relative w-full max-w-85 sm:max-w-97.5 xl:max-w-105 flex items-center justify-center">
               
               {/* Circular ambient glow radiating from the center and slowly fading out at edges */}
               <div
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] sm:w-[460px] h-[360px] sm:h-[460px] rounded-full pointer-events-none blur-3xl opacity-90"
+                className="absolute top-[42%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-90 sm:w-115 h-90 sm:h-115 rounded-full pointer-events-none blur-3xl opacity-90"
                 style={{
                   background: "radial-gradient(circle, rgba(175, 95, 255, 0.46) 0%, rgba(147, 51, 234, 0.28) 38%, rgba(126, 34, 206, 0.10) 62%, transparent 75%)",
                 }}
               />
 
-              {/* Clean photo with very slow bottom fade into near-black hero background */}
+              {/* Clean photo with slow fade out into near-black (#0e0717) */}
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="relative z-10 w-full rounded-t-2xl sm:rounded-t-3xl overflow-hidden aspect-[4/4.8]"
-                style={{
-                  maskImage: "linear-gradient(to bottom, black 50%, rgba(0,0,0,0.7) 75%, transparent 100%)",
-                  WebkitMaskImage: "linear-gradient(to bottom, black 50%, rgba(0,0,0,0.7) 75%, transparent 100%)",
-                }}
+                className="relative z-10 w-full flex justify-center items-end"
               >
                 <img
                   src={personal}
                   alt="Abinu Mathewos"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto max-h-125 object-contain pointer-events-none select-none"
+                  style={{
+                    maskImage: "linear-gradient(to bottom, black 55%, rgba(0,0,0,0.7) 80%, transparent 100%)",
+                    WebkitMaskImage: "linear-gradient(to bottom, black 55%, rgba(0,0,0,0.7) 80%, transparent 100%)",
+                  }}
                 />
 
-                {/* Soft gradient overlay matching the #0e0717 background for a smooth, natural dissolve */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0e0717] via-[#0e0717]/50 via-30% to-transparent pointer-events-none" />
+                {/* Soft gradient dissolve to black / near-black (#0e0717) at the bottom */}
+                <div
+                  className="absolute inset-x-0 bottom-0 h-44 sm:h-56 pointer-events-none"
+                  style={{
+                    background: "linear-gradient(to bottom, transparent 0%, rgba(14, 7, 23, 0.35) 30%, rgba(14, 7, 23, 0.8) 70%, #0e0717 100%)",
+                  }}
+                />
               </motion.div>
             </div>
           </motion.div>

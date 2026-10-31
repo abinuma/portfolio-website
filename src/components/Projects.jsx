@@ -56,7 +56,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects">
+    <div id="projects" className="relative bg-[#0e0717]">
       <ScrollFadeUp className="flex flex-col items-center my-12">
         <h2 className="text-2xl md:text-3xl font-bold text-[#d6d0d0] tracking-wide">
           Projects

@@ -29,7 +29,7 @@ const About = () => {
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.15]">
                   A little about{" "}
-                  <span className="bg-gradient-to-r from-purple-200 via-purple-300 to-indigo-200 bg-clip-text text-transparent">
+                  <span className="bg-linear-to-r from-purple-200 via-purple-300 to-indigo-200 bg-clip-text text-transparent">
                     me
                   </span>
                 </h2>
