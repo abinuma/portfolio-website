@@ -2,7 +2,7 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-[#11071f] z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-[#0e0717] z-50">
       {/* Glow background */}
       <div className="absolute w-72 h-72 bg-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
 
